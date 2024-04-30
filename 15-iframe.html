@@ -6,7 +6,12 @@
     <title>iframe 요소</title>
   </head>
   <body>
-    <!-- title을 설정해주면  -->
+    <!-- aria-label 설정해주는 게 title보다 좋음. 사용성을 높일 수 있다면 함께 사용할 수도 있지만 권장x.  -->
+    <!-- WAI-ARIA 접근 가능한 이름 (Accessible Name) 우선 순위.
+          1. aria-label
+          2. aria-labelledby
+          3. aria-describedby
+          4. title -->
     <iframe
       aria-label="스크린 리더 사용자를 위한 착한 마크업"
       width="560"
