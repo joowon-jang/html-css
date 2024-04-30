@@ -6,13 +6,16 @@
     <title>피규어와 이미지</title>
   </head>
   <body>
+    <!-- img 태그는 꼭 alt를 포함해야 함. 접근성up -->
     <h1><img src="./images/webcafe-logo.png" alt="웹카페" /></h1>
     <div><img src="./images/webcafe-logo.png" alt="" /></div>
 
     <img src="./images/brochure.png" alt="" />
     <br />
+    <!-- loading 속성을 laze로 지정해서 성능up -->
     <img src="./images/coffee.png" alt="" loading="lazy" />
 
+    <!-- 여러 시멘틱태그 figure, strong 등 -->
     <figure>
       <img src="./images/likelion-black.png" alt="" />
       <figcaption>멋쟁이 사자처럼</figcaption>

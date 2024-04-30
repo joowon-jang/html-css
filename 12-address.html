@@ -6,13 +6,16 @@
     <title>address 관련 요소</title>
   </head>
   <body>
+    <!-- contact(연락처 등) 정보 address 태그. -->
     <address>
       <span>(주)멋쟁이사자처럼</span>
+      <!-- aria-hidden을 사용하면 스크린리더가 읽지 않음. -->
       <span aria-hidden="true">|</span>
       <span>대표이사 나성영</span>
       <span>서울특별시 종로구 종로3길 17 D타워, 16-17층</span>
       <span
         >문의처
+        <!-- mailto를 사용하면 클릭했을 때 mail앱이 실행되지만, 한국에서는 클레임이 많아서 잘 안씀. -->
         <a href="mailto:contact@likilion.net">contact@likilion.net</a></span
       >
     </address>

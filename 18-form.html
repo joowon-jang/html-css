@@ -13,6 +13,7 @@
       class="search-form"
       id="'search-form"
     >
+    <!-- fieldset 태그로 의미적인 역할. ex) 필수,선택항복 구분 -->
       <fieldset>
         <legend>검색</legend>
         <div class="searchform-wrapper">
@@ -32,6 +33,7 @@
         </div>
       </fieldset>
     </form>
+    <!-- button 태그의 type 속성은 지정하지 않으면 기본으로 submit. 다른 역할을 할 때는 지정 꼭 하기. -->
     <button type="submit" class="searchform-button" form="search-form">
       검색
     </button>
@@ -57,6 +59,7 @@
     <p id="euid-course">이듬 교육을 다시 수강할 의향이 있으신가요?</p>
     <div aria-labelledby="euid-course" role="group">
       <div class="form-radio-wrapper">
+        <!-- name 속성이 같으면 하나만 선택가능. -->
         <input
           type="radio"
           id="euid-course-yes"
@@ -81,6 +84,7 @@
     <br />
 
     <!-- 셀렉트 박스 예시 -->
+    <!-- aria-label을 사용했기 때문에 label 태그를 안썼음. -->
     <select
       aria-label="언어 선택"
       name="selectLanguage"

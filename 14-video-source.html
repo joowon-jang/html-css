@@ -6,11 +6,14 @@
     <title>비디오 관련 요소</title>
   </head>
   <body>
+    <!-- 크롬에서 autoplay는 mute를 해야만 자동재생됨. 접근성 때문(스크린리더 등) -->
     <video class="fullsize" poster="video/poster.jpg" controls autoplay>
+      <!-- 브라우저 환경에 따라 호환되는 source를 로드. -->
       <source src="video/google-developer-stories.mp4" type="video/mp4" />
       <source src="video/google-developer-stories.mov" type="video/mov" />
       <source src="video/google-developer-stories.ogg" type="video/ogg" />
       <source src="video/google-developer-stories.webm" type="video/webm" />
+      <!-- 자막. -->
       <track
         src="video/google-developer-stories-subtitles-en.vtt"
         kind="captions"

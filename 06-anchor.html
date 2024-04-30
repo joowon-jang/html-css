@@ -8,12 +8,15 @@
   <body id="body">
     <a href="https://techit.education/school">Techit 스쿨</a> <br />
     <a href="#euid">이듬 제목 영역으로 이동</a> <br />
+    <!-- download 속성을 추가하면 해당 파일을 다운로드함. -->
     <a href="./images/checked.svg" download>
       <img src="./images/brochure.png" alt="" />
     </a>
     <br />
+    <!-- target 속성을 _blank로 설정하면 새 창을 열지만, 임의로 설정하면 해당하는 이름의 창에서 열고, 없으면 새로 만들고 이름 지정됨.  -->
     <a href="https://www.naver.com" target="euid">네이버</a>
     <a href="https://www.daum.net" target="euid">다음</a>
+    <!-- rel="noopenner norefferrer" 보안 이슈로 꼭 써야함. 크롬 등의 최신 브라우저에서는 해당 속성을 쓰지 않으면 자동으로 쓴 것처럼 설정됨. -->
     <a
       href="https://techit.education/school"
       target="_blank"
@@ -341,6 +344,7 @@
       교육이 무엇인지를 끊임없이 고민하는 회사로 자리매김할 것입니다.
     </p>
     <h1 id="euid">EUID 이듬</h1>
+    <!-- 맨 위로 이동. -->
     <a href="#body">처음으로 이동</a>
   </body>
 </html>

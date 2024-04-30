@@ -6,13 +6,17 @@
     <title>picture, source 요소</title>
   </head>
   <body>
+    <!-- picture 태그는 다양한 환경에서 최적의 이미지를 표시하기 위한 태그. -->
     <picture>
+      <!-- 환경에 따라 다른 src파일이 로드됨. -->
       <source
         srcset="./images/netflix@1x.webp 1x, ./images/netflix@2x.webp 2x"
       />
+      <!-- source의 이미지 중 아무 것도 로드되지 못했을 때 img가 로드됨. 크롬처럼 picture요소를 지원하는 최신 브라우저에서는 나올 일이 없음. -->
       <img src="./images/netflix.png" alt="넷플릭스" />
     </picture>
     <picture>
+      <!-- max-width에 따라 다른 이미지 로드. -->
       <source
         srcset="
           ./images/small-550.jpg    550w,
